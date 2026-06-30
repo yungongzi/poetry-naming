@@ -13,7 +13,7 @@ export default function Hero({ onDraw, onBrowse }: HeroProps) {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-24 text-center"
+      className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-24 text-center mb-24"
     >
       {/* 朱砂印章 */}
       <div className="animate-rise mb-8 flex items-center gap-3">
@@ -76,7 +76,7 @@ export default function Hero({ onDraw, onBrowse }: HeroProps) {
       </div>
 
       {/* CTA 按钮 */}
-      <div className="mt-12 flex animate-rise flex-col items-center gap-4 [animation-delay:0.6s] sm:flex-row">
+      <div className="mt-12 flex animate-rise flex-col items-center gap-16 [animation-delay:0.6s] sm:flex-row">
         <button
           type="button"
           onClick={onDraw}
@@ -90,8 +90,8 @@ export default function Hero({ onDraw, onBrowse }: HeroProps) {
           onClick={onBrowse}
           className="group glass lift flex items-center gap-3 rounded-full px-8 py-4 text-lg text-paper/85 transition-all hover:text-gold"
         >
-          <span className="font-xiaowei">浏览名典</span>
           <ChevronDown className="h-5 w-5 transition-transform group-hover:translate-y-1" />
+          <span className="font-xiaowei">浏览名典</span>
         </button>
       </div>
 
